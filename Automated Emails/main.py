@@ -6,7 +6,7 @@ from news import NewsFeed
 
 # while True:
 #     if datetime.datetime.now().hour == 15 and datetime.datetime.now().minute == 45:
-df = pandas.read_excel('people.xlsx')
+df = pandas.read_excel('D:\Python_Projects\Automated Emails\people.xlsx')
 
 for index, row in df.iterrows():
     news_feed = NewsFeed(interest = row['interest'], 
